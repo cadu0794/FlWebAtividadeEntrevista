@@ -133,6 +133,20 @@
     <Content Include="App_Data\BancoDeDados_log.ldf">
       <DependentUpon>BancoDeDados.mdf</DependentUpon>
     </Content>
+    <Content Include="BD\SQL\dbo.BENEFICIARIOS.Table.sql" />
+    <Content Include="BD\SQL\dbo.CLIENTES.Table.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_AltBenef.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_AltCliente.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_ConsBeneficiario.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_ConsCliente.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_DelBeneficiariosPorCliente.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_IncBeneficiario.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_IncCliente.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_IncClienteV2.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_PesqCliente.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_VerificaBeneficiarios.StoredProcedure.sql" />
+    <Content Include="BD\SQL\dbo.FI_SP_VerificaCliente.StoredProcedure.sql" />
+    <Content Include="BD\WebAtividadeBD.sql" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\themes\base\accordion.css" />
