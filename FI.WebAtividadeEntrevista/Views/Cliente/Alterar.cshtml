@@ -1,0 +1,19 @@
+﻿@model WebAtividadeEntrevista.Models.ClienteModel
+@{
+    ViewBag.Title = "Alterar Cliente";
+}
+@section scripts{
+<script>
+        var urlPost = '@Url.Action("Alterar", "Cliente", new { area = "" })';
+        var obj = @Html.Raw(Json.Encode(Model));
+    var urlRetorno = '@Url.Action("Index", "Cliente", new { area = "" })';
+
+    // Transforma a string JSON de beneficiários em objeto (caso exista)
+    if (obj && obj.BeneficiariosJson) {
+        obj.Beneficiarios = JSON.parse(obj.BeneficiariosJson);
+    }
+</script>
+    @Scripts.Render("~/bundles/altClientes")
+}
+<h2>@Html.Raw(ViewBag.Title)</h2>
+@Html.Partial("Forms")
